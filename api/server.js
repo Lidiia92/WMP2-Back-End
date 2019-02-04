@@ -20,6 +20,6 @@ server.use("/api/register/", registerRoute);
 server.use("/api/users/", userRoutes);
 server.use("/api/plants/", plantsRoute);
 server.use("/api/usersunp/", usersUnpRoutes);
-erver.use("/api/plantsunp/", plantsUnpRoutes);
+server.use("/api/plantsunp/", plantsUnpRoutes);
 
 module.exports = server;
