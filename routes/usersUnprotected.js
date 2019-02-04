@@ -12,7 +12,7 @@ router.get("/:id/plants", async (req, res) => {
   try {
     const id = req.params.id;
     const plants = await db('plants').where('userId', id);
-    res.status(200).json({plants});
+    res.status(200).json(plants);
 
   } catch(err) {
     res.status(500).json({message: "There was an error trying to connect to the data base, please try again"});
